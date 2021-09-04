@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.hero {
+  width: 100%;
+  height: 80vh;
+  background-image: url("images/bg-hero-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #edfbfe;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  width: 100%;
+  padding: 20px 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header button {
+  padding: 12px 30px;
+  border: none;
+  background-color: white;
+  box-shadow: 3px 4px 2px #dddd;
+  border-radius: 20px;
+}
+.hero-section {
+  width: 100%;
+  padding: 20px 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+.hero-text {
+  /* width: 50%; */
+  text-align: left;
+}
+.hero-text h2 {
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+.btn-pink {
+  padding: 15px 25px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 20px;
+  background-color: #fe52bf;
+  color: white;
+}
+.hero-section img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.grid-section {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 40px;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: center;
+}
+.grid-section .grid-item {
+  width: 90vw;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  box-shadow: 3px 2px 2px 4px #dddd;
+  /* border-radius: 10px; */
+}
+.grid-item:nth-child(2) {
+  flex-direction: row-reverse;
+}
+.grid-section .grid-item img {
+  max-width: 100%;
+  max-height: 40vh;
+  padding: 15px;
+}
+.grid-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  width: 100%;
+  background-color: hsl(192, 100%, 9%);
+  margin-top: 100px;
+  position: relative;
+  color: white;
+  padding: 60px 50px;
+}
+.top-footer {
+  background-color: white;
+  position: absolute;
+  padding: 30px;
+  border-radius: 10px;
+  left: 50%;
+  width: 500px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  top: -80px;
+  box-shadow: 0.2px 3px 4px 0.2px hsl(192deg 100% 9%);
+}
+.footer-flex {
+  width: 100%;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.top-footer button {
+  margin-top: 20px;
+}
+.contact {
+  width: 30%;
+}
+ul li {
+  padding: 5px 0px;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.socials {
+  display: flex;
+  font-size: 35px;
+}
+.socials i {
+  margin-left: 15px;
+}
+i:first-child {
+  margin-left: 0;
+}
+.copyRigth {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  font-size: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .grid-item img {
+    height: 20vh;
+  }
+  .hero-section img {
+    min-width: 500px;
+  }
+  .hero {
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 100vh;
+  }
+  .footer-flex {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .hero-section img {
+    min-width: 300px;
+  }
+  footer {
+    padding: 30px 10px;
+  }
+  .hero-section {
+    padding: 20px;
+    flex-direction: column;
+  }
+  .grid-item {
+    padding: 15px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .grid-item:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .grid-text {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  .hero-text {
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .header {
+    padding: 10px 5px;
+  }
+  .header button {
+    padding: 10px 15px;
+  }
+  .top-footer {
+    width: 90vw;
+    font-size: 15px;
+  }
+  .contact {
+    width: 100%;
+  }
+  .hero-text h2 {
+    font-size: 25px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .header button {
+    padding: 5px 10px;
+  }
+}
